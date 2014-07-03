@@ -1,0 +1,4 @@
+<?php
+  define( 'AWS_ACCESS_KEY_ID', 'AKIAJHRBTA2CRI3BEZ2A' );
+  define( 'AWS_SECRET_ACCESS_KEY', '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' );
+?>

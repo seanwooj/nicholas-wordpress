@@ -15,6 +15,7 @@
  */
 
 include('init.php');
+include('s3.php');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
