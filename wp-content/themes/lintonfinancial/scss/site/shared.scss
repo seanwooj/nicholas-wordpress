@@ -1,0 +1,68 @@
+/* Header Navigation */
+.top-bar-container {
+  display: table-row !important;
+  .top-bar {
+    .top-bar-section {
+      ul {
+        li {
+          a { font-weight: 100;}
+        }
+      }
+    }
+    .title-area {
+      .name {
+        h1 {
+          a { font-weight: 300; }
+        }
+      }
+    }
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.dark-grey {
+  background: #333333;
+}
+
+.light-grey {
+  background: #F5F5F5
+}
+
+.blue {
+  background: #019CDE;
+  color: white;
+  * { color: white; }
+}
+
+.dark-bg {
+  color: white;
+  * { color: white; }
+}
+
+.table { display: table; }
+.table-row {
+  display: table-row;
+  > * {
+    display: table-cell;
+  }
+}
+
+.middle-align {
+  vertical-align: middle;
+}
+
+a.button {
+  background-color: #019CDE;
+  &.wide { padding-left: 7em; padding-right: 7em;}
+}
+
+.centered {
+  text-align: center;
+}
+
+.row-header {
+  > * { margin-bottom: 1em; }
+}

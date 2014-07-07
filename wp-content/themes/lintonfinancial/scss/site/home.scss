@@ -1,0 +1,58 @@
+/* Masthead */
+#fixed-top {
+  display: table;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+}
+
+#masthead, #section-head {
+  .hero {
+    text-align: center;
+    height: 100%;
+    padding: 0 5%;
+    .hero-header {
+      color: white;
+      font-weight: 300;
+      font-size: 3em;
+    }
+  }
+  .masthead-bg {
+    /* thanks paypal! */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.7;
+    display: inline-block;
+    object-fit: cover;
+  }
+}
+
+.hero-notification {
+  .expander {
+    p { line-height: 80px; color: white; font-weight: 300; font-size: 18px; margin-bottom: 0;}
+  }
+}
+
+.editorial-row {
+  &.slim {
+    padding: 40px 0 60px;
+  }
+  padding: 90px 0;
+  text-align: left;
+}
+
+.container-centered {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.header-with-button {
+  margin-bottom: 1em;
+}
