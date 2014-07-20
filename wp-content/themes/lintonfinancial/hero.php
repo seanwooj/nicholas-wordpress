@@ -93,9 +93,9 @@ get_header(); ?>
 	<div class="full-width-row light-grey">
 	  <div class="row editorial-row">
 	    <div class="container-centered">
-	      <h3 class="header-with-button">Money Matters.</h3>
-	      <a class="button wide" href="#">
-	        Plan your future.
+	      <h3 class="header-with-button"><?php the_field('bottom_cta'); ?></h3>
+	      <a class="button wide" href="<?php the_field('bottom_cta_button_link'); ?>">
+	        <?php the_field('bottom_cta_button_text'); ?>
 	      </a>
 	    </div> <!-- container centered -->
 	  </div> <!-- row editorial row -->
@@ -104,24 +104,18 @@ get_header(); ?>
 </div>
 
 	<div class="row">
-		<div class="small-12 large-8 columns" role="main">
+		<div class="small-12 columns" role="main">
 
 		<?php do_action('foundationPress_before_content'); ?>
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<article <?php post_class() ?> id="post-<?php the_ID(); ?>"><!--
 				<header>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header>
+				</header> -->
 				<?php do_action('foundationPress_page_before_entry_content'); ?>
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
-				<footer>
-					<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-					<p><?php the_tags(); ?></p>
-				</footer>
-				<?php do_action('foundationPress_page_before_comments'); ?>
-				<?php do_action('foundationPress_page_after_comments'); ?>
+				<?php the_content(); ?>
+
+
 			</article>
 
 		<?php do_action('foundationPress_after_content'); ?>
