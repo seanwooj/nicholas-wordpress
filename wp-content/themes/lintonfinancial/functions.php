@@ -6,7 +6,7 @@ URL: http://olefredrik.com
 
 
 // Various clean up functions
-require_once('library/cleanup.php'); 
+require_once('library/cleanup.php');
 
 // Required for Foundation to work properly
 require_once('library/foundation.php');
@@ -28,5 +28,8 @@ require_once('library/enqueue-scripts.php');
 
 // Add theme support
 require_once('library/theme-support.php');
+
+// Customize PageBuilder
+require_once('library/pagebuilder.php');
 
 ?>

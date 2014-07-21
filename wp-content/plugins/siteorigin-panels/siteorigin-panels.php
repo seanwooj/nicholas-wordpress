@@ -694,8 +694,9 @@ function siteorigin_panels_render( $post_id = false, $enqueue_css = true, $panel
 	}
 
 	foreach ( $grids as $gi => $cells ) {
-
+		// here is where the grids are created
 		$grid_classes = apply_filters( 'siteorigin_panels_row_classes', array('panel-grid'), $panels_data['grids'][$gi] );
+		// can hook in here and change the row attributes to be what I want them to be
 		$grid_attributes = apply_filters( 'siteorigin_panels_row_attributes', array(
 			'class' => implode( ' ', $grid_classes ),
 			'id' => 'pg-' . $post_id . '-' . $gi
@@ -734,6 +735,7 @@ function siteorigin_panels_render( $post_id = false, $enqueue_css = true, $panel
 			echo '>';
 		}
 
+		// here is where the cells get created.
 		foreach ( $cells as $ci => $widgets ) {
 			// Themes can add their own styles to cells
 			$cell_classes = apply_filters( 'siteorigin_panels_row_cell_classes', array('panel-grid-cell'), $panels_data );
@@ -812,7 +814,8 @@ function siteorigin_panels_the_widget( $widget, $instance, $grid, $cell, $panel,
 
 	if( empty($post_id) ) $post_id = get_the_ID();
 
-	$classes = array( 'panel', 'widget' );
+	// here is where the widgets get their class information.
+	$classes = apply_filters( 'siteorigin_panels_widget_classes', array( 'panel', 'widget' ), $panels_data );
 	if ( !empty( $the_widget ) && !empty( $the_widget->id_base ) ) $classes[] = 'widget_' . $the_widget->id_base;
 	if ( $is_first ) $classes[] = 'panel-first-child';
 	if ( $is_last ) $classes[] = 'panel-last-child';

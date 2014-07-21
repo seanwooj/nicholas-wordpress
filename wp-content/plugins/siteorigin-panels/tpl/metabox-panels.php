@@ -9,7 +9,7 @@ $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 
 	<div id="panels-container">
 	</div>
-	
+
 	<div id="add-to-panels">
 		<button class="panels-add" data-tooltip="<?php esc_attr_e('Add Widget','siteorigin-panels') ?>"><?php _e('Add Widget', 'siteorigin-panels') ?></button>
 		<button class="grid-add" data-tooltip="<?php esc_attr_e('Add Row','siteorigin-panels') ?>"><?php _e('Add Row', 'siteorigin-panels') ?></button>
@@ -18,9 +18,9 @@ $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 		<?php endif; ?>
 		<div class="clear"></div>
 	</div>
-	
+
 	<?php // The add new widget dialog ?>
-	
+
 	<div id="panels-dialog" data-title="<?php esc_attr_e('Add New Widget','siteorigin-panels') ?>" class="panels-admin-dialog">
 		<div id="panels-dialog-inner">
 			<div class="panels-text-filter">
@@ -48,11 +48,11 @@ $layouts = apply_filters( 'siteorigin_panels_prebuilt_layouts', array() );
 
 			<?php do_action('siteorigin_panels_after_widgets'); ?>
 		</div>
-		
+
 	</div>
 
 	<?php // The add row dialog ?>
-	
+
 	<div id="grid-add-dialog" data-title="<?php esc_attr_e('Add Row','siteorigin-panels') ?>" class="panels-admin-dialog">
 		<p><label><strong><?php _e('Columns', 'siteorigin-panels') ?></strong></label></p>
 		<p><input type="text" id="grid-add-dialog-input" name="column_count" class="small-text" value="3" /></p>
