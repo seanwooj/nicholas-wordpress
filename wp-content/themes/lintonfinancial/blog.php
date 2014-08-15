@@ -1,3 +1,10 @@
+<?php 
+/*
+Template Name: Blog
+*/
+get_header(); 
+?>
+
 <?php get_header(); ?>
 
 </div> <!-- end fixed top -->

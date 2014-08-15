@@ -66,3 +66,60 @@ a.button {
 .row-header {
   > * { margin-bottom: 1em; }
 }
+
+
+// BLOG STUFF
+
+#blog-body {
+  padding-top: 40px;
+}
+
+.post {
+  margin-bottom: 4em;
+  .item-thumb {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .item-header {
+    h2 {
+      font-weight: 300;
+      a { color: #333333 }
+    }
+  }
+  .loop-post-meta {
+    margin-bottom: 12px;
+    ul { 
+      margin-left: 0;
+      li {
+        float: left;
+        list-style: none;
+        &.date {
+          color: #999999;
+        }
+        &.comments {
+          &:before {
+            content: "\007C";
+            display: block;
+            float: left;
+            margin: 0 12px;
+          }
+        }
+      }
+    }
+  }
+  .excerpt-text {
+    margin-bottom: 20px;
+    p { color: #666666; }
+  }
+
+  .blog-button {
+    display: inline-block;
+    border: #999 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    color: #999;
+    font-weight: 300;
+  }
+
+}
