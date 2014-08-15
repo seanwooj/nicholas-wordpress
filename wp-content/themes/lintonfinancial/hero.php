@@ -49,9 +49,10 @@ get_header(); ?>
 		<div class="full-width-row light-grey">
 		  <div class="row editorial-row">
 		    <div class="container-centered">
-		      <h3 class="header-with-button"><?php the_field('bottom_cta'); ?></h3>
-		      <a class="button wide" href="<?php the_field('bottom_cta_button_link'); ?>">
-		        <?php the_field('bottom_cta_button_text'); ?>
+		      <h3 class="header-with-button"><?php //the_field('bottom_cta'); ?>CTA</h3>
+		      <a class="button wide" href="#<?php //the_field('bottom_cta_button_link'); ?>">
+		        <?php //the_field('bottom_cta_button_text'); ?>
+		        CTA BUTTON TEXT
 		      </a>
 		    </div> <!-- container centered -->
 		  </div> <!-- row editorial row -->

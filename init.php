@@ -3,7 +3,7 @@
 // or development site.
 
 switch( $_SERVER['HTTP_HOST'] ){
-  case "financial.dev":
+  case "nicholas.dev":
     $db = array(
       'name' => 'linton_development',
       'user' => 'wordpress',
