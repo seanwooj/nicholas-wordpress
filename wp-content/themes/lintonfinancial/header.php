@@ -34,7 +34,7 @@
   <body <?php body_class(); ?>>
   <?php do_action('foundationPress_after_body'); ?>
 
-  <div id="fixed-top" class="<?php if( has_post_thumbnail() ){ echo 'show-fixed';} ?>"> <!-- TODO - add conditional here to only include it if we're pulling in the HERO -->
+  <div id="fixed-top"> <!-- TODO - add conditional here to only include it if we're pulling in the HERO -->
 
   <?php do_action('foundationPress_layout_start'); ?>
 

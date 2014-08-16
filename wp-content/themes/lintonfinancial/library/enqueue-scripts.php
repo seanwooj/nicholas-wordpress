@@ -32,5 +32,12 @@ function kitchensink_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'kitchensink_scripts' );
 
+function load_fonts() {
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Roboto+Slab:400,100,300,700');
+	wp_enqueue_style('googleFonts');
+}
+
+add_action('wp_print_styles', 'load_fonts');
+
 
 ?>

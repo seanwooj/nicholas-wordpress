@@ -6,7 +6,9 @@
  */
 register_nav_menus(array(
     'top-bar-l' => 'Left Top Bar', // registers the menu in the WordPress admin menu editor
-    'top-bar-r' => 'Right Top Bar'
+    'top-bar-r' => 'Right Top Bar',
+    'footer-top-menu' => 'Footer Top Menu',
+    'footer-bottom-menu' => 'Footer Bottom Menu'
 ));
 
 
@@ -48,6 +50,34 @@ function foundationPress_top_bar_r() {
         'depth' => 5,                                   // limit the depth of the nav
         'fallback_cb' => false,                         // fallback function (see below)
         'walker' => new top_bar_walker()
+    ));
+}
+
+/**
+ * Footer top menu
+ */
+function foundationPress_footer_top_menu() {
+    wp_nav_menu(array(
+        'container' => false,
+        'container_class' => '',
+        'menu' => '',
+        'menu_class' => 'footer-links',
+        'theme_location' => 'footer-top-menu',
+        'fallback_cb' => false
+    ));
+}
+
+/**
+ * Footer bottom menu
+ */
+function foundationPress_footer_bottom_menu() {
+    wp_nav_menu(array(
+        'container' => false,
+        'container_class' => '',
+        'menu' => '',
+        'menu_class' => 'footer-links',
+        'theme_location' => 'footer-bottom-menu',
+        'fallback_cb' => false
     ));
 }
 

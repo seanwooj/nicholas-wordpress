@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-</div> <!-- end fixed top -->
 <div class="body-container" id="blog-body">
 
 	<div class="row">

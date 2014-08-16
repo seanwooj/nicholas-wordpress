@@ -1,6 +1,8 @@
 <?php get_header(); ?>
+
 <?php include("_masthead.php"); ?>
-</div> <!-- end fixed top -->
+
+
 <div class="body-container" id="blog-body">
 	<div class="row">
 		<div class="small-12 large-8 columns" role="main">
@@ -12,6 +14,9 @@
 				<?php do_action('foundationPress_post_before_entry_content'); ?>
 				
 				<div class="entry-content">
+					<?php if( !has_post_thumbnail() ){ ?>
+						<h1 class="blog-header"><?php the_title(); ?></h1>
+					<?php } ?>
 					<?php FoundationPress_entry_meta(); ?>
 					<?php the_content(); ?>
 				</div>
