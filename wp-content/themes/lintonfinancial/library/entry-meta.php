@@ -12,5 +12,9 @@ if(!function_exists('FoundationPress_entry_meta')) :
 		<?php
 
     }
+
+    function FoundationPress_date_meta(){
+    	echo get_the_time('l, F jS, Y');
+    }
 endif;
 ?>

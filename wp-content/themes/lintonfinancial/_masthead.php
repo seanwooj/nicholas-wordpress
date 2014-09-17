@@ -2,7 +2,7 @@
 	<header id="section-head" role="banner" class="table-row dark-bg">
 		<div class="table-cell hero middle-align">
 			<h1 class="hero-header"><a href="<?php bloginfo('url'); ?>"><?php the_title(); ?></a></h1>
-			<!-- <h4 class="subheader"><?php bloginfo('description'); ?></h4> -->
+			<h4 class="subheader"><?php FoundationPress_date_meta(); ?></h4>
 		</div>
 
 		<?php
