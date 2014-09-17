@@ -13,7 +13,7 @@ switch( $_SERVER['HTTP_HOST'] ){
   break;
   default:
     $db = array(
-      'name' => 'wordpress',
+      'name' => 'linton_production',
       'user' => 'wordpress',
       'pass' => 'f0rth3w1n',
       'host' => 'linton-financial-wordpress.cx0xyqse1lf3.us-east-1.rds.amazonaws.com'
